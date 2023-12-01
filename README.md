@@ -1,4 +1,4 @@
-# Battery-Summer-Project
+# Battery-SoC-Prediction-Ensemble-Wind
 Batteries are becoming increasingly prevalent in unmanned aerial vehicles. Hence, one of the major challenges that need to be addressed to successfully integrate unmanned aerial vehicles into the national airspace is the assessment of flight mission risks associated with the available battery energy. The overall objective of your summer project is to contribute to the development of a framework to quantify uncertainty in mission success due to available battery energy.
 This repository contains all your works related to your summer project. 
 
