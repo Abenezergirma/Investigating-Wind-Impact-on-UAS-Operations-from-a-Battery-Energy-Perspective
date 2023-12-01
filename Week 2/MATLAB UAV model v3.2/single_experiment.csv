@@ -1,0 +1,2 @@
+Trajectory Type,Wind X,Wind Y,Motor Affected,Full Loss,Partial Loss,Turbulence,Saturation RPM,Mean TTE,Sum TTE,Max TTE,Median TTE,Std TTE,TTF,TTC,Completed,TOC,Cross Corridor,Variance
+square,0,0,NaN,1,0,0,0,0.743252212065442,6484.87555027098,2.00311855758713,0.564015572458771,0.70573784971436,NaN,87.24,1,0.55,3,0.00112999706874593

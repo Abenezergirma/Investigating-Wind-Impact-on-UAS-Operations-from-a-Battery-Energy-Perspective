@@ -1,0 +1,2 @@
+clear  
+xx = load('xwind')
