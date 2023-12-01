@@ -17,3 +17,13 @@ $n$ represents the number of Monte Carlo simulations in the prediction step.
 
 # EoD Prediction Procedure
 
+![](Week%203/prog_procedure.png)
+
+
+The battery EoD prediction process is illustrated in the above figure. According to the procedure, given a flight plan and information about the available battery energy, the first step is to obtain the wind forecast along the 4-D trajectory of the flight plan. After collecting the wind data, the aircraft is simulated along the flight plan to obtain the mission's current requirement ($I_{req}$), which is used as a future load for battery EoD prediction. Next, the UKF-based estimator is employed to obtain the initial state distribution of the battery. Once the initial state distribution of the battery is obtained, samples are randomly drawn from the distribution, and the EoD is predicted for each sample using the Monte Carlo predictor. Finally, the predicted EoD points are collected, and the probability density function for battery EoD at the flight end time is constructed.
+
+# Experiment Results 
+
+![](Week%203/wind_results.png)
+
+[1] https://papers.phmsociety.org/index.php/phmconf/article/view/2252
