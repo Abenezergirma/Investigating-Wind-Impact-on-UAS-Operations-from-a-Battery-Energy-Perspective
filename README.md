@@ -1,6 +1,6 @@
 # Battery-SoC-Prediction-Ensemble-Wind
-Batteries are becoming increasingly prevalent in unmanned aerial vehicles. Hence, one of the major challenges that need to be addressed to successfully integrate unmanned aerial vehicles into the national airspace is the assessment of flight mission risks associated with the available battery energy. The overall objective of your summer project is to contribute to the development of a framework to quantify uncertainty in mission success due to available battery energy.
-This repository contains all your works related to your summer project. 
+The overall objective of this project is to develop a framework to quantify uncertainty in mission success due to available battery energy considering different wind conditions.
+This repository is structured into three major tasks I created to train three undergraduate students. 
 
 # Introduction 
 Our aim in the battery energy-related mission success/failure prediction process is to predict the occurrence of the battery's EoD, which is defined as the time at which the SoC of the battery falls below a pre-defined threshold value. SoC of a battery is typically defined as 1 when the battery is fully charged and 0 when the battery is discharged to a predetermined voltage threshold. Such a task is known as prognostics, and we adopted model-based prognostics architecture from [1]. 
