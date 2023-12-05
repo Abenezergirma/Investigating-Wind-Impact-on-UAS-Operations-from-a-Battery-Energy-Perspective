@@ -1,32 +1,26 @@
-Safe and Scalable Real-time Trajectory Planner for Urban Air Mobility
+Investigating Wind Impact on UAS-Operations from a Battery Energy Perspective
 ===================================
 
    
 Overview
 --------
 
-The goal of this project is to develop a real-time planning framework that's both safe and scalable. The following are the key features of the developed trajectory planner.
+The overall objective of this project is to develop a framework to quantify uncertainty in mission success due to available battery energy considering different wind conditions.
+This repository is structured into three major tasks which can be summarized as follows: 
 
 
-#. **Decentralized Free-Flight Concept**:
-   
-   - Every aircraft independently handles conflict resolution and ensures safety by considering the predicted positions of nearby planes.
-   
-#. **Two-Part Framework**:
-   
-   - **Reachability Analysis Tool**: Predicts potential aircraft movements using data from simulated trajectories.
-   - **Decision Maker**: Uses a 6-degree freedom model for fixed-wing aircraft to plan collision-free paths.
 
-#. **Safety Enhancements**:
+#.  **Electro-chemical based Battery Model**
    
-   - Incorporates techniques like reward shaping and action shielding to boost safety.
    
-#. **Performance Testing**:
+#. **Detailed Dynamic Model for Octo-rotor**
    
-   - Simulated tests with up to 32 aircraft showed the effectiveness of this framework, measured by reduced Near Mid Air Collisions (NMAC) and computational efficiency.
 
+#. **Model-Based Battery Prognostics Architecture**
+   
+The battery model utilized in this study is an electro-chemical-based model of Lithium-ion batteries, as described in [1], which are a popular choice for powering unmanned aerial vehicles. 
     
-.. image:: images/planning_framework.png
+.. image:: images/framework_schematic.png
    :alt: alternate text
    :align: center
    :width: 100%
@@ -41,15 +35,14 @@ Check out the following sections for further infromation about the project, incl
    :maxdepth: 2
    
    index
-   scenario
    results
    usage
 
-For the full implementation of this project, please visit our `GitHub repository <https://github.com/Abenezergirma/Chapter-1>`_.
+For the full implementation of this project, please visit our `GitHub repository <https://github.com/Abenezergirma/Investigating-Wind-Impact-on-UAS-Operations-from-a-Battery-Energy-Perspective>`_.
 
 .. note::
 
    This project is under active development.
    
    
-
+[1] https://papers.phmsociety.org/index.php/phmconf/article/view/2252

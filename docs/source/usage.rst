@@ -10,47 +10,59 @@ Installation
 
 .. code-block::
 
-    git clone https://github.com/Abenezergirma/Chapter-1.git
+    git clone https://github.com/Abenezergirma/Investigating-Wind-Impact-on-UAS-Operations-from-a-Battery-Energy-Perspective.git
 
 
-2. Ensure you have the required softwares installed with their dependancies (MATLAB etc.).
+2. Ensure you have the required softwares installed with their dependancies (MATLAB, Simulink, Python  etc.).
 3. Set up the project environment following the guidelines in the project documentation.
 
-The project is developed using MATLAB codes. 
+
    
 
 Project Structure
 -----------------
 
-The project is organized into four distinct branches:
+- **Aircraft Model**: Contains all the MATLAB code and essential files for running the simulation.
+- **Wind Files**: The desired wind conditions are defined in ``xwind.csv`` and ``ywind.csv``, located in ``matlab/MATLAB UAV model v3.2/wind_files``. Replace these files as needed for different wind conditions.
 
+Utilities for Support and Plotting
+----------------------------------
 
-- `main`: Contains all the techniques discussed in the chapter.
-- `baseline`: Implements the baseline technique discussed in the chapter.
-- `reward_shaping`: Implementation of the reward shaping technique.
-- `action_shielding`: Implementation of the action shielding technique.
+- **Prognostics Module**: contains supporting Python scripts and a Jupyter notebook for plotting results.
+
+Data Management
+---------------
+
+- All simulation-generated files are temporarily stored in the ``data`` folder and then moved to ``data/past_results`` once the simulation finishes.
+
 
    
 
 Implementation Guideline
 -----------------
 
-Follow these steps to successfully implement the project:
+The master script, ``main.py``, is the entry point for running the entire codebase.
 
 
-1. Navigate to the `main.m` script.
+Running the Codebase
+---------------------
 
-2. Configure the desired number of agents you wish to simulate.
+1. **Initiate Simulation**: Start the process by running ``main.py``.
 
-3. Execute the script.
+2. **Matlab Simulation**:
+   
+   - Simulates current requirements for a predefined flight path under specific wind conditions.
+   - Outputs include:
+     - ``current_sim.txt`` in the ``data`` folder, containing the simulation current results.
+     - ``batt_sim.csv`` in the ``data`` folder, detailing the simulation time step, voltage, current, and state of charge.
 
-4. Once completed, collect key flight statistics, including NMAC and Computation time.
+3. **Battery Prognostics**:
 
-5. Save your environment as a `.mat` file.
+   - After MATLAB simulation, the script ``Battery Prognostics/batterypronostics.py`` runs, utilizing ``current_sim.txt`` for state estimation and prediction for the TarotT18 Battery.
+   - This script performs multiple simulations (default 500) and outputs ``mc_result.pkl`` in the ``data`` folder.
 
-6. To visualize the results, import the saved `.mat` file into the `animate.m` script and run it.
+4. **Result Visualization**:
 
-
-For more detailed information on each step, refer to the corresponding sections in the documentation.
+   - Finally, the Jupyter notebook ``Battery Prognostics/Plots and Results/Plots.ipynb`` is used to plot SOC curves, SOC predictions, voltage simulations, and current inputs.
 
 

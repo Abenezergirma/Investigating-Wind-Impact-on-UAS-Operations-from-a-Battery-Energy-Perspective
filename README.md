@@ -1,12 +1,12 @@
 # Investigating-Wind-Impact-on-UAS-Operations-from-a-Battery-Energy-Perspective
 The overall objective of this project is to develop a framework to quantify uncertainty in mission success due to available battery energy considering different wind conditions.
-This repository is structured into three major tasks I created to train three undergraduate students. These three tasks can be summarized as follows: 
+This repository is structured into three major tasks which can be summarized as follows: 
 
 1. **Electro-chemical based Battery Model** 
    
 2. **Detailed Dynamic Model for Octo-rotor**
    
-4. **Model-Based Battery Prognostics Architecture**
+3. **Model-Based Battery Prognostics Architecture**
   
 # Introduction 
 Our aim in the battery energy-related mission success/failure prediction process is to predict the occurrence of the battery's EoD, which is defined as the time at which the SoC of the battery falls below a pre-defined threshold value. SoC of a battery is typically defined as 1 when the battery is fully charged and 0 when the battery is discharged to a predetermined voltage threshold. Such a task is known as prognostics, and we adopted model-based prognostics architecture from [1]. 
