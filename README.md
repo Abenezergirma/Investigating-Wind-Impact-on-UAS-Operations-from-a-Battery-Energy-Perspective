@@ -1,4 +1,4 @@
-# Battery-SoC-Prediction-Ensemble-Wind
+# Investigating-Wind-Impact-on-UAS-Operations-from-a-Battery-Energy-Perspective
 The overall objective of this project is to develop a framework to quantify uncertainty in mission success due to available battery energy considering different wind conditions.
 This repository is structured into three major tasks I created to train three undergraduate students. These three tasks can be summarized as follows: 
 
