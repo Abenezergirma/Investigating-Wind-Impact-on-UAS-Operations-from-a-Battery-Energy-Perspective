@@ -8,7 +8,7 @@
 import os 
 import sphinx_rtd_theme
 
-project = 'UAM Trajectory Planner'
+project = 'Wind Impact on Battery'
 copyright = '2023, Abenezer Taye'
 author = 'Abenezer Taye'
 

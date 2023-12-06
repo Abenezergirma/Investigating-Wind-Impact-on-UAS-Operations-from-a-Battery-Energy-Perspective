@@ -29,7 +29,7 @@ The battery model utilized in this study is an electro-chemical-based model of L
 Contents
 --------
     
-Check out the following sections for further infromation about the project, including the implemented :doc:`scenario`, :doc:`results` from the experiments, and :doc:`usage` for :ref:`installation` of the project.
+Check out the following sections for further infromation about the project, including the :doc:`results` from the experiments, and :doc:`usage` for :ref:`installation` of the project.
 
 .. toctree::
    :maxdepth: 2
